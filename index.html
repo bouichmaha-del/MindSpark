@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>MindSpark</title>
+</head>
+<body style="text-align:center; font-family:sans-serif; background:#f5f5f5;">
+
+  <h1>🌟 MindSpark</h1>
+  <p>اقتباس اليوم:</p>
+
+  <h2 id="quote">اضغط الزر</h2>
+
+  <button onclick="newQuote()">🎯 اقتباس جديد</button>
+
+  <script>
+    const quotes = [
+      "ابدأ يومك بابتسامة 😊",
+      "أنت قادر على تحقيق كل شيء 💪",
+      "لا تستسلم أبداً 🔥",
+      "كل يوم فرصة جديدة ✨"
+    ];
+
+    function newQuote() {
+      const random = quotes[Math.floor(Math.random() * quotes.length)];
+      document.getElementById("quote").innerText = random;
+    }
+  </script>
+
+</body>
+</html>
